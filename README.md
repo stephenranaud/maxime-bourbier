@@ -1,8 +1,6 @@
 <h1 align="center">Hello 👋, I'm Maxime BOURRIER</h1>
 <h3 align="center">UX/UI Designer</h3>
-<p>
  <img src="https://github.com/stephenranaud/maxime-bourrier/blob/main/assets/me.png?raw=true" width="150px">
-</p>
 
 <h3 align="left">Connect with me:</h3>
  I like to create interfaces, visual identities, or motion design.
