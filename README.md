@@ -1,4 +1,4 @@
-<h1 align="center">Hello 👋, I'm Maxime BOURRIER</h1>
+<h1 align="center">Hello 👋, I'm Maxime BOURBIER</h1>
 <h2 align="center">UX/UI Designer✒️</h2>
 <img src="https://github.com/stephenranaud/maxime-bourrier/blob/main/assets/me.png?raw=true" width="150px">
 I like to create interfaces, visual identities, or motion design.
