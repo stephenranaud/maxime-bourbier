@@ -1,0 +1,6 @@
+@import '../utils/vars';
+@mixin media-query-tablet {
+    @media screen and (min-width: map-get($break-points, tablet)) {
+        @content;
+    }
+}

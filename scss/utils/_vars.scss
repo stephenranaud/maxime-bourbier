@@ -1,0 +1,14 @@
+// Colors palette
+$color-actif1: #FF8C00;
+$color-actif2: #E4C78C;
+$color-actif3: #FFBF72;
+$color-base: #FFFFFF;
+$color-txt: #0F0F0F;
+$color-sub-txt: #838282;
+$linear-base: linear-gradient(310.05deg, #ADADAD 2%, #FFFFFF 43.94%, #D0D0D0 88.84%);
+$linear-secondary: linear-gradient(180deg, #E4C484 8.85%, rgba(228, 196, 132, 0.21) 100%);
+//Sizing
+$border-radius: 6px;
+$border-radius-btn: 7px;
+$gap: 6.25rem;
+$break-points: (mobile: 425px, tablet: 768px, x-latop: 1024px, latop: 1200px);

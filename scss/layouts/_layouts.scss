@@ -1,0 +1,85 @@
+@import '../utils/vars';
+@import '../utils/mixins';
+//Navigations
+.nav-main {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: calc(1rem * 0.75);
+    background-color: $color-base;
+}
+
+@include media-query-tablet {
+    .nav-main {
+        justify-content: flex-start;
+    }
+}
+
+//grid
+.grid-products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: map-get($map: $break-points, $key: x-latop);
+    margin: auto;
+    .product {
+        flex: 1 1 50%;
+        min-width: 200px;
+        max-width: 350px;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    &__item {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        i {
+            color: $color-actif3;
+        }
+    }
+}
+
+.wrapper-form {
+    margin-top: 2rem;
+    margin-bottom: .5rem;
+    max-width: 250px;
+    margin: auto;
+}
+
+.group-form {
+    position: relative;
+    display: flex;
+    margin-top: 1.7rem;
+    input,
+    textarea,
+    select {
+        padding-top: .2rem;
+        padding-bottom: .2rem;
+        width: 100%;
+        border: 2px solid black;
+        border-radius: 10px;
+        background-color: lighten($color: $color-sub-txt, $amount: 45);
+    }
+    input+i {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+    }
+    textarea+i {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+}

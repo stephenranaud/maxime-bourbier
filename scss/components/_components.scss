@@ -1,0 +1,122 @@
+@import '../utils/vars';
+@import '../utils/mixins';
+.icon-menu {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    &.active {
+        &::after,
+        &::before {
+            top: 50%;
+            transition: ease-in-out 500ms;
+        }
+        &::after {
+            transform: rotate(-45deg);
+        }
+        &::before {
+            transform: rotate(45deg);
+        }
+    }
+    &::after,
+    &::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: $color-txt;
+        position: absolute;
+    }
+    &::before {
+        top: 37%;
+    }
+    &::after {
+        top: 63%
+    }
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.simple-menu {
+    position: absolute;
+    top: 3rem;
+    right: 1rem;
+    left: 60%;
+    opacity: 0;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    line-height: 1.667rem;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 255, .1);
+    background-color: darken($color: $color-base, $amount: 3);
+    &.active {
+        display: flex;
+        transition: ease-in-out 500ms;
+        opacity: 1;
+    }
+}
+
+.block-text {
+    h1 {
+        width: min(60%, 25ch);
+    }
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    font-size: 1rem;
+    color: $color-actif1;
+    gap: 1rem;
+    &__line {
+        width: 1.5rem;
+        height: 2px;
+        background-color: $color-actif1;
+    }
+}
+
+.separator {
+    height: 300px;
+}
+
+.btn {
+    border: none;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: $border-radius-btn;
+    font-size: bold;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2px;
+    color: $color-base;
+    background-color: $color-actif1;
+}
+
+@include media-query-tablet {
+    .simple-menu {
+        position: static;
+        opacity: 1;
+        box-shadow: none;
+        background-color: transparent;
+        padding: 0;
+        margin: 0;
+        a {
+            margin-left: 1rem;
+            text-decoration: none;
+            color: $color-txt;
+            font-weight: bold;
+        }
+        &.active {
+            display: block;
+        }
+    }
+    .icon-menu {
+        display: none;
+    }
+}
