@@ -1,0 +1,11 @@
+h1 {
+    font-size: clamp(1rem, 7vw, 5rem);
+    font-family: 'Montserrat';
+}
+
+span,
+a,
+p {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    font-family: 'Montserrat';
+}

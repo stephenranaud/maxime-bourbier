@@ -56,11 +56,18 @@
         transition: ease-in-out 500ms;
         opacity: 1;
     }
+    a {
+        font-weight: bold;
+    }
 }
 
 .block-text {
     h1 {
         width: min(60%, 25ch);
+    }
+    p {
+        font-weight: bold;
+        font-size: clamp(1.2rem, 3vw, 50px);
     }
 }
 
@@ -79,7 +86,7 @@
 }
 
 .separator {
-    height: 300px;
+    height: calc(300px + 7vmin);
 }
 
 .btn {
@@ -108,9 +115,6 @@
         margin: 0;
         a {
             margin-left: 1rem;
-            text-decoration: none;
-            color: $color-txt;
-            font-weight: bold;
         }
         &.active {
             display: block;
