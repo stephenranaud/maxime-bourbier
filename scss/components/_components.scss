@@ -62,12 +62,14 @@
 }
 
 .block-text {
-    h1 {
+    h2 {
         width: min(60%, 25ch);
+        font-size: clamp(1.4rem, 3.3vw, 72px);
+        font-weight: bold;
     }
     p {
         font-weight: bold;
-        font-size: clamp(1.2rem, 3vw, 50px);
+        font-size: clamp(1.2rem, 2.4vw, 45px);
     }
 }
 

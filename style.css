@@ -41,7 +41,7 @@ a:focus {
 
 header {
   margin-bottom: 100px;
-  background-image: url("../assets/backgroundme.png");
+  background-image: url("assets/backgroundme.png");
   background-size: cover;
   background-position: -10% -50%;
   background-repeat: no-repeat;
@@ -68,17 +68,46 @@ section {
 }
 
 .section-product {
-  background-image: url(../assets/background.png);
+  background-image: url(assets/background.png);
   background-repeat: no-repeat;
 }
 
 .section-contact {
-  background: url(../assets/forms.png) no-repeat calc(90vw - 10vmax) 10%/50vmin, transparent;
+  background: url(assets/forms.png) no-repeat calc(90vw - 10vmax) 10%/50vmin, transparent;
 }
 
 h1 {
   font-size: clamp(1rem, 7vw, 5rem);
+}
+
+h1 {
   font-family: "Montserrat";
+  font-size: clamp(1rem, 7vw, 85px);
+}
+
+h2 {
+  font-family: "Montserrat";
+  font-size: clamp(0.5rem, 3.5vw, 42.5px);
+}
+
+h3 {
+  font-family: "Montserrat";
+  font-size: clamp(0.3333333333rem, 2.3333333333vw, 28.3333333333px);
+}
+
+h4 {
+  font-family: "Montserrat";
+  font-size: clamp(0.25rem, 1.75vw, 21.25px);
+}
+
+h5 {
+  font-family: "Montserrat";
+  font-size: clamp(0.2rem, 1.4vw, 17px);
+}
+
+h6 {
+  font-family: "Montserrat";
+  font-size: clamp(0.1666666667rem, 1.1666666667vw, 14.1666666667px);
 }
 
 span,
@@ -239,12 +268,14 @@ p {
   font-weight: bold;
 }
 
-.block-text h1 {
+.block-text h2 {
   width: min(60%, 25ch);
+  font-size: clamp(1.4rem, 3.3vw, 72px);
+  font-weight: bold;
 }
 .block-text p {
   font-weight: bold;
-  font-size: clamp(1.2rem, 3vw, 50px);
+  font-size: clamp(1.2rem, 2.4vw, 45px);
 }
 
 .title {

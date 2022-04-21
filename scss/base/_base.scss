@@ -44,7 +44,7 @@ a:focus {
 
 header {
     margin-bottom: 100px;
-    background-image: url('../assets/backgroundme.png');
+    background-image: url('assets/backgroundme.png');
     background-size: cover;
     background-position: -10% -50%;
     background-repeat: no-repeat;
@@ -71,10 +71,10 @@ section {
 }
 
 .section-product {
-    background-image: url(../assets/background.png);
+    background-image: url(assets/background.png);
     background-repeat: no-repeat;
 }
 
 .section-contact {
-    background: url(../assets/forms.png) no-repeat calc(90vw - 10vmax) 10% / 50vmin, transparent;
+    background: url(assets/forms.png) no-repeat calc(90vw - 10vmax) 10% / 50vmin, transparent;
 }
