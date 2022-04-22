@@ -6,7 +6,6 @@ export function ativeMenu(idSelectBtnMenu = 'btn-menu', idMenu = 'simple-menu') 
 
     let iconMenu = document.getElementById(idSelectBtnMenu);
     let menu = document.getElementById(idMenu);
-    console.log(menu);
 
     iconMenu.addEventListener('click', e => {
         if (iconMenu && menu) {

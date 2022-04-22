@@ -1,5 +1,9 @@
 @import '../utils/vars';
 @import '../utils/mixins';
+.separator {
+    height: calc(10px + 17vmin);
+}
+
 .icon-menu {
     width: 25px;
     height: 25px;
@@ -39,10 +43,11 @@
 
 .simple-menu {
     position: absolute;
-    top: 3rem;
+    top: 4rem;
     right: 1rem;
     left: 60%;
     opacity: 0;
+    visibility: hidden;
     justify-content: center;
     flex-direction: column;
     padding-top: 1rem;
@@ -55,6 +60,7 @@
         display: flex;
         transition: ease-in-out 500ms;
         opacity: 1;
+        visibility: visible;
     }
     a {
         font-weight: bold;
@@ -62,14 +68,32 @@
 }
 
 .block-text {
+    max-width: map-get($map: $break-points, $key: latop);
+    margin: auto;
     h2 {
-        width: min(60%, 25ch);
-        font-size: clamp(1.4rem, 3.3vw, 72px);
-        font-weight: bold;
+        width: min(80%, 35ch);
+    }
+    h3 {
+        font-weight: 600;
+        margin: 0;
     }
     p {
         font-weight: bold;
         font-size: clamp(1.2rem, 2.4vw, 45px);
+    }
+    &--img {
+        display: flex;
+        align-items: flex-start;
+    }
+    &__text {
+        flex: 1 4 auto;
+    }
+    &__img {
+        flex: 1 1 72px;
+        max-width: 260px;
+        img {
+            width: 100%;
+        }
     }
 }
 
@@ -85,10 +109,6 @@
         height: 2px;
         background-color: $color-actif1;
     }
-}
-
-.separator {
-    height: calc(300px + 7vmin);
 }
 
 .btn {
@@ -111,6 +131,7 @@
     .simple-menu {
         position: static;
         opacity: 1;
+        visibility: initial;
         box-shadow: none;
         background-color: transparent;
         padding: 0;

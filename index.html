@@ -9,9 +9,13 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
     <script src="js/main.js" type="module"></script>
+    <script src="js/animation.js" type="module"></script>
 </head>
 
 <body>
+    <div id="sl">
+        <i class="ri-arrow-up-line"></i>
+    </div>
     <header class="header-basic">
 
         <nav class="nav-main">
@@ -22,16 +26,16 @@
             <div class="nav-main__nav">
                 <div id="btn-menu" class="icon-menu"></div>
                 <div id="simple-menu" class="simple-menu">
-                    <a href=".">Home</a>
-                    <a href="html/about_me.html">About me</a>
-                    <a href="html/projects.html">Projects</a>
+                    <a href="/index.html">Home</a>
+                    <a href="/html/about_me.html">About me</a>
+                    <a href="/projects.html">Projects</a>
                     <a href="#contact">Contact</a>
                 </div>
             </div>
         </nav>
 
         <div class="wrapper">
-            <div class="block-text">
+            <div class="block-text appear">
                 <div class="title">
                     <span class="title__line"></span>
                     <span class="title__text">Maxime Bourbier</span>
@@ -41,19 +45,20 @@
                 </h1>
             </div>
             <div class="separator"></div>
-            <div class="block-text">
+            <div class="block-text appear-right">
                 <div class="title">
                     <span class="title__line"></span>
                     <span class="title__text">What I do</span>
                 </div>
-                <p>
+                <h2>
                     I like to create interfaces, visual identities, or motion design.
-                </p>
+                </h2>
                 <br><br>
-                <p>
+                <h2>
 
                     Taking care of the user experience and innovating in digital is also a part of my skills.
-                </p>
+                </h2>
+                <br>
                 <a href="#" class="btn">
                     Contact me
                     <i class="ri-arrow-right-line"></i>
@@ -62,7 +67,7 @@
         </div>
     </header>
 
-    <section class="section-product">
+    <section class="section-product appear">
         <div class="wrapper">
             <div class="block-text">
                 <div class="title">
@@ -101,7 +106,7 @@
 
     <section class="section-contact">
         <div class="wrapper">
-            <div class="block-text">
+            <div class="block-text appear">
                 <div class="title">
                     <span class="title__line"></span>
                     <span class="title__text">Contact me</span>
@@ -115,7 +120,7 @@
                 </p>
             </div>
 
-            <div class="contact">
+            <div class="contact appear-left">
                 <div class="contact__item">
                     <i class="ri-mail-fill"></i>
                     <span>maxime.bourbier@gmail.com</span>
@@ -131,7 +136,7 @@
             </div>
 
             <div class="wrapper-form">
-                <form id="contact" action="" class="form-contact">
+                <form id="contact" action="" class="form-contact appear-right">
                     <div class="group-form group-form--border-gradient">
                         <input type="text">
                         <i class="ri-user-fill"></i>
