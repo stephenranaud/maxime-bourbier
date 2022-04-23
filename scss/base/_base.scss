@@ -1,11 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Mulish&display=swap');
 @import '../utils/vars';
+html,
+body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
 body {
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
 }
 
-body>#sl {
+body>#scroll-top {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,7 +25,7 @@ body>#sl {
     bottom: 10vh;
     z-index: 1000;
     cursor: pointer;
-    color: $color-base;
+    color: $color-base
 }
 
 #copyright {

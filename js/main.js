@@ -1,6 +1,7 @@
 /**
- * @param {string} idSelectBtnMenu HTML attribute id
+ * @param {string} idSelectBtnMenu Selector CSS
  * @param {string} idMenu  HTML attribute id
+ * @returns {void}
  */
 export function ativeMenu(idSelectBtnMenu = 'btn-menu', idMenu = 'simple-menu') {
 
@@ -20,3 +21,12 @@ export function ativeMenu(idSelectBtnMenu = 'btn-menu', idMenu = 'simple-menu') 
 
 
 ativeMenu();
+
+/**
+ * @param {string} selector Selector CSS
+ * @returns {void}
+ */
+function smoothScroll(selector = '#scroll-top') {
+
+
+}
