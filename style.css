@@ -15,8 +15,8 @@ body > #scroll-top {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: calc(20px + 4vmin);
-  height: calc(20px + 4vmin);
+  width: calc(20px + 7vmin);
+  height: calc(20px + 7vmin);
   background-color: #E4C78C;
   border-radius: 50%;
   position: fixed;
